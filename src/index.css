@@ -1,4 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Estedad';
+  src: url(./assets/fonts/Estedad/Estedad-Thin.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Estedad';
+  src: url(./assets/fonts/Estedad/Estedad-ExtraLight.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Estedad';
+  src: url(./assets/fonts/Estedad/Estedad-Light.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Estedad';
+  src: url(./assets/fonts/Estedad/Estedad-Regular.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Estedad';
+  src: url(./assets/fonts/Estedad/Estedad-Medium.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Estedad';
+  src: url(./assets/fonts/Estedad/Estedad-SemiBold.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Estedad';
+  src: url(./assets/fonts/Estedad/Estedad-Bold.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Estedad';
+  src: url(./assets/fonts/Estedad/Estedad-ExtraBold.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Estedad';
+  src: url(./assets/fonts/Estedad/Estedad-Black.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 900;
+}
