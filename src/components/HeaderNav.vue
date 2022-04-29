@@ -14,7 +14,7 @@
               </div>
             </div>
             <div class="hidden md:block md:mr-10 md:pl-4 md:space-s-8">
-              <a v-for="item in navigation" :key="item.name" :href="item.href" class="font-bold text-gray-700 hover:text-gray-500 transition-colors">{{ ' ' + item.name + ' ' }}</a>
+              <router-link v-for="item in navigation" :key="item.name" :to="item.href" class="font-bold text-gray-700 hover:text-gray-500 transition-colors">{{ ' ' + item.name + ' ' }}</router-link>
             </div>
           </div>
           <ui-button class="hidden md:block primary">
@@ -38,7 +38,7 @@
               </div>
             </div>
             <div class="px-2 pt-2 pb-3 space-y-1">
-              <a v-for="item in navigation" :key="item.name" :href="item.href" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors">{{ item.name }}</a>
+              <router-link v-for="item in navigation" :key="item.name" :to="item.href" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300 transition-all">{{ item.name }}</router-link>
             </div>
             <a href="#" class="block w-full px-5 py-3 text-center ont-medium text-primary-600 hover:text-primary-500 transition-colors bg-primary-50 hover:bg-primary-100">ورود به حساب کاربری</a>
           </div>
