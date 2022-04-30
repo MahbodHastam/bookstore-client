@@ -58,3 +58,11 @@
   font-style: normal;
   font-weight: 900;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+i.bx {
+  vertical-align: middle;
+}
