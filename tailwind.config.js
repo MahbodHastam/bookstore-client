@@ -3,7 +3,6 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  darkMode: false,
   theme: {
     container: {
       center: true,
@@ -16,6 +15,7 @@ module.exports = {
       },
       colors: {
         primary: colors.blue,
+        secondary: colors.pink,
       },
     },
   },
