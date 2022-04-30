@@ -69,9 +69,9 @@
         <div class="grid grid-cols-1 justify-center lg:grid-cols-3 w-full gap-8 pb-8"> <!-- flex flex-wrap  -->
 
           <div class="w-full px-4 mt-10">
-            <div class="border-2 border-slate-200 bg-white rounded-2xl shadow-2xl w-full py-10 px-8 sm:p-12 lg:pt-10 lg:px-6 xl:p-12 md:mt-14 text-center">
+            <div class="border-2 border-slate-200 bg-white rounded-2xl shadow-2xl w-full py-10 px-8 sm:p-12 lg:pt-10 lg:px-6 xl:p-12 md:mt-14 text-center group">
               <h4 class="text-primary-700 text-3xl text-center font-semibold">
-                <span class="relative after:content-[' '] after:absolute after:w-2/6 after:h-5 after:bg-primary-300 after:bg-opacity-60 after:bottom-1 after:-right-1 after:rounded-full after:-z-10 z-10">
+                <span class="relative after:transition-all after:content-[' '] after:absolute after:w-2/6 group-hover:after:w-4/6 group-hover:after:h-6 after:h-5 after:bg-primary-300 after:bg-opacity-60 after:bottom-1 after:-right-1 after:rounded-full after:-z-10 z-10">
                   حساب معمولی
                 </span>
               </h4>
@@ -104,9 +104,9 @@
           </div>
           <div class="w-full px-4 mt-10">
             <div class="relative py-[3px] px-[4px] md:mt-7 bg-gradient-to-br from-green-300 via-blue-500 to-indigo-600 w-full rounded-2xl">
-              <div class="border-2 border-slate-200 bg-white rounded-2xl shadow-2xl w-full py-10 px-8 sm:p-12 lg:pt-10 lg:px-6 xl:p-12 text-center">
+              <div class="border-2 border-slate-200 bg-white rounded-2xl shadow-2xl shadow-indigo-400 w-full py-10 px-8 sm:p-12 lg:pt-10 lg:px-6 xl:p-12 text-center group">
                 <h4 class="text-sky-700 text-3xl text-center font-semibold">
-                  <span class="relative after:content-[' '] after:absolute after:w-2/6 after:h-5 after:bg-sky-300 after:bg-opacity-60 after:bottom-1 after:-right-1 after:rounded-full after:-z-10 z-10">
+                  <span class="relative after:transition-all after:content-[' '] after:absolute after:w-2/6 group-hover:after:w-4/6 group-hover:after:h-6 after:h-5 after:bg-sky-300 after:bg-opacity-60 after:bottom-1 after:-right-1 after:rounded-full after:-z-10 z-10">
                     مادام‌العمر
                   </span>
                 </h4>
@@ -125,7 +125,11 @@
                   </li>
                   <li class="font-light">
                     <i class="bx bx-palette text-slate-700"></i>
-                    استفاده از قالب‌های متفاوت نمایشی
+                    استفاده از قالب‌های نمایشی متفاوت
+                  </li>
+                  <li class="font-light">
+                    <i class="bx bx-group text-slate-700"></i>
+                    خواندن گروهی کتاب، با دوستان
                   </li>
                 </ul>
                 <ui-button class="text-white bg-gradient-to-r from-emerald-500 to-green-400 shadow-lg shadow-green-300 hover:opacity-80 block w-full mt-8">
@@ -135,9 +139,9 @@
             </div>
           </div>
           <div class="w-full px-4 mt-10"> <!-- md:w-1/2 lg:w-1/3  -->
-            <div class="border-2 border-slate-200 bg-white rounded-2xl shadow-2xl w-full py-10 px-8 sm:p-12 lg:pt-10 lg:px-6 xl:p-12 text-center">
+            <div class="border-2 border-slate-200 bg-white rounded-2xl shadow-2xl w-full py-10 px-8 sm:p-12 lg:pt-10 lg:px-6 xl:p-12 text-center group">
               <h4 class="text-primary-700 text-3xl text-center font-semibold">
-                <span class="relative after:content-[' '] after:absolute after:w-7/12 after:h-5 after:bg-primary-300 after:bg-opacity-60 after:bottom-1 after:-right-1 after:rounded-full after:-z-10 z-10">
+                <span class="relative after:transition-all after:content-[' '] after:absolute after:w-7/12 group-hover:after:w-9/12 group-hover:after:h-6 after:h-5 after:bg-primary-300 after:bg-opacity-60 after:bottom-1 after:-right-1 after:rounded-full after:-z-10 z-10">
                   اقتصادی
                 </span>
                 <span class="text-sm">
@@ -162,7 +166,7 @@
                   حالت تاریک برای مطالعه در شب
                 </li>
               </ul>
-              <ui-button class="primary-solid shadow-lg shadow-primary-300 block w-full mt-8">
+              <ui-button class=" primary-solid shadow-lg shadow-primary-300 block w-full mt-8">
                 خرید اشتراک
               </ui-button>
             </div>
