@@ -2,7 +2,7 @@
   <div>
     <header-nav />
     <!-- First section -->
-    <section class="relative pt-10">
+    <section class="relative pt-10 pb-20 lg:pb-0">
       <div class="container flex flex-col-reverse lg:flex-row items-center gap-0 lg:gap-14 mt-0 lg:mt-8">
         <!-- Content -->
         <div class="flex flex-1 flex-col items-center lg:items-start">
@@ -57,6 +57,7 @@
       </div>
       <div class="hidden md:block overflow-hidden from-red-100 to-transparent bg-gradient-to-b rounded-l-full absolute h-80 w-2/4 top-32 right-0 -z-50"></div>
     </section>
+
     <!-- Pricing section -->
     <section class="relative py-20">
       <div class="container flex flex-col items-center gap-8 my-20">
@@ -103,8 +104,8 @@
             </div>
           </div>
           <div class="w-full px-4 mt-10">
-            <div class="relative py-[3px] px-[4px] md:mt-7 bg-gradient-to-br from-green-300 via-blue-500 to-indigo-600 w-full rounded-2xl">
-              <div class="border-2 border-slate-200 bg-white rounded-2xl shadow-2xl shadow-indigo-400 w-full py-10 px-8 sm:p-12 lg:pt-10 lg:px-6 xl:p-12 text-center group">
+            <div class="relative p-0.5 md:mt-7 bg-gradient-to-br from-green-300 via-blue-500 to-indigo-600 w-full rounded-2xl">
+              <div class="bg-white rounded-2xl shadow-2xl shadow-indigo-400 w-full py-10 px-8 sm:p-12 lg:pt-10 lg:px-6 xl:p-12 text-center group">
                 <h4 class="text-sky-700 text-3xl text-center font-semibold">
                   <span class="relative after:transition-all after:content-[' '] after:absolute after:w-2/6 group-hover:after:w-4/6 group-hover:after:h-6 after:h-5 after:bg-sky-300 after:bg-opacity-60 after:bottom-1 after:-right-1 after:rounded-full after:-z-10 z-10">
                     مادام‌العمر
@@ -175,6 +176,8 @@
       </div>
       <div class="overflow-hidden from-slate-100 via-slate-100 to-transparent bg-gradient-to-t rounded-b-full absolute h-3/4 w-full inset-0 -z-50"></div>
     </section>
+
+    <!-- Books Swiper -->
     <BooksSwiper headingTitle="کتاب‌های پر‌طرفدار" type="popular" />
   </div>
 </template>
