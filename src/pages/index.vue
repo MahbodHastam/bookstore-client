@@ -2,7 +2,7 @@
   <div>
     <header-nav />
     <!-- First section -->
-    <section class="relative py-20">
+    <section class="relative pt-10">
       <div class="container flex flex-col-reverse lg:flex-row items-center gap-0 lg:gap-14 mt-0 lg:mt-8">
         <!-- Content -->
         <div class="flex flex-1 flex-col items-center lg:items-start">
