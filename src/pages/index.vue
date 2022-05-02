@@ -1,6 +1,5 @@
 <template>
   <div>
-    <header-nav />
     <!-- First section -->
     <section class="relative pt-10 pb-20 lg:pb-0">
       <div class="container flex flex-col-reverse lg:flex-row items-center gap-0 lg:gap-14 mt-0 lg:mt-8">
@@ -174,18 +173,19 @@
           </div>
         </div>
       </div>
-      <div class="overflow-hidden from-slate-100 via-slate-100 to-transparent bg-gradient-to-t rounded-b-full absolute h-3/4 w-full inset-0 -z-50"></div>
+      <div class="overflow-hidden from-slate-100 via-slate-200 to-transparent bg-gradient-to-t rounded-bl-full absolute h-3/4 w-full inset-0 -z-50"></div>
     </section>
 
     <!-- Books Swiper -->
-    <BooksSwiper headingTitle="کتاب‌های پر‌طرفدار" type="popular" />
+    <suspense>
+      <BooksSwiper headingTitle="کتاب‌های پر‌طرفدار" type="popular" />
+    </suspense>
   </div>
 </template>
 
 <script setup>
 import { CollectionIcon, CursorClickIcon, ChevronDownIcon as DownIcon, CreditCardIcon, LightningBoltIcon } from '@heroicons/vue/solid'
 import { ref } from 'vue';
-import HeaderNav from '../components/HeaderNav.vue'
 import BooksSwiper from '../components/BooksSwiper.vue'
 import Logo from '../components/Logo.vue'
 
