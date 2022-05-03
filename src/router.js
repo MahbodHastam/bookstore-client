@@ -1,8 +1,7 @@
-import IndexPage from './pages/index.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 export const routes = [
-  { path: '/', component: IndexPage}
+  { path: '/', component: () => import('./pages/index.vue') }
 ]
 
 export const router = createRouter({
