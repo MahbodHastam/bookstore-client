@@ -14,3 +14,9 @@ export const nonFreeBooksRaw = [
   { title: 'گودرت خاک', cover: '', free: false },
   { title: 'عمو پورنگ و خانه‌ی ما', cover: '', free: false },
 ]
+
+export default {
+  popularBooksRaw,
+  newestBooksRaw,
+  nonFreeBooksRaw,
+}
