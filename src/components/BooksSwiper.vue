@@ -20,24 +20,61 @@
     </h4>
     <swiper
       :modules="modules"
-      :slides-per-view="3"
-      :space-between="150"
-      :autoplay="{ delay: 5000, disableOnInteraction: false }"
-      class="!py-3 !px-3"
+      :slides-per-view="1"
+      :space-between="30"
+      :breakpoints="breakpoints"
+      class="!py-20 !px-3"
     >
+      <!-- :autoplay="{ delay: 5000, disableOnInteraction: false }" -->
       <swiper-slide v-for="(book, idx) in books" :key="idx">
-        <div class="bg-red-400 shadow-xl shadow-slate-200 rounded-lg py-2 px-4">
-          <p class="text-lg text-slate-800 my-3">{{ book.title }}</p>
+        <div class="bg-gradient-to-b from-slate-200 via-slate-100 to-white shadow-xl shadow-gray-300 rounded-lg p-4 max-w-md mx-auto group">
+          <div class="relative rounded-lg -mt-14 overflow-hidden w-full shadow-gray-300 shadow-[0_-10px_15px_-9px,0_4px_15px_3px]">
+            <img :src="book.cover" :alt="book.title + ' cover'" class="rounded-lg w-full h-64 transition-all group-hover:scale-110">
+            <div class="absolute h-12 w-full gap-2 flex items-center justify-end flex-row bottom-3 left-3">
+              <a href="#" class="rounded-full p-3 bg-green-600  text-white bg-opacity-80 hover:bg-opacity-100 transition-all">
+                <UserGroupIcon class="w-4" />
+              </a>
+              <a href="#" class="text-sm space-s-1 px-4 py-2 rounded-full transition-all bg-primary-600 text-primary-100 bg-opacity-95 hover:bg-opacity-100 hover:text-primary-50">
+                <EyeIcon class="w-4 inline-block" />
+                <span>
+                  شروع به خواندن
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="py-3 px-4">
+            <a href="#" class="text-xl text-slate-800 hover:text-slate-600 transition-colors">
+              {{ book.title }}
+            </a>
+            <div class="flex flex-row justify-around items-center mt-6">
+              <span class="rounded-full bg-cyan-100 text-cyan-600 px-3 py-1 text-sm">
+                <i class="bx bx-book"></i>
+                {{ book.attributes.pages }} صفحه
+              </span>
+              <span v-if="book.free" class="rounded-full bg-lime-100 text-lime-600 px-3 py-1 text-sm">
+                <i class="bx bx-purchase-tag"></i>
+                رایگان
+              </span>
+              <span v-else class="rounded-full bg-amber-100 text-amber-600 px-3 py-1 text-sm">
+                <i class="bx bx-lock"></i>
+                نیازمند حساب
+              </span>
+            </div>
+          </div>
         </div>
       </swiper-slide>
     </swiper>
+    <br>
+    <br>
+    <br>
+    <br>
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { BookOpenIcon } from '@heroicons/vue/outline'
-import { HeartIcon, SparklesIcon, KeyIcon } from '@heroicons/vue/solid'
+import { BookOpenIcon, EyeIcon } from '@heroicons/vue/outline'
+import { HeartIcon, SparklesIcon, KeyIcon, UserGroupIcon } from '@heroicons/vue/solid'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/vue'
 import { Autoplay } from 'swiper'
 import Data, { popularBooksRaw, newestBooksRaw, nonFreeBooksRaw } from '../data'
@@ -67,4 +104,19 @@ const books = getBooks(props.type)
 
 // Swiper
 const modules = [Autoplay]
+
+const breakpoints = {
+  768: {
+    slidesPerView: 2,
+    spaceBetween: 40,
+  },
+  992: {
+    slidesPerView: 3,
+    spaceBetween: 40,
+  },
+  1920: {
+    slidesPerView: 4,
+    spaceBetween: 150,
+  },
+}
 </script>
