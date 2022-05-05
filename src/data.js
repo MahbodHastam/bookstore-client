@@ -26,7 +26,7 @@ export const popularBooksRaw = [
   },
   {
     title: 'عمو پورنگ و خانه‌ی ما',
-    cover: pic4,
+    cover: picHaha,
     free: false,
     attributes: { pages: 193 },
   },
