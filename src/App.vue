@@ -7,12 +7,14 @@
         <component :is="Component" />
       </transition>
     </router-view>
+    <custom-footer />
   </div>
 </template>
 
 <script setup>
 import 'swiper/css/bundle'
 import HeaderNav from './components/HeaderNav.vue'
+import CustomFooter from './components/Footer.vue'
 </script>
 
 <style>
