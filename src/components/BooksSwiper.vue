@@ -27,9 +27,9 @@
       class="!py-20 !px-3"
     >
       <swiper-slide v-for="(book, idx) in books" :key="idx">
-        <div class="bg-gradient-to-b from-slate-200 via-slate-100 to-white shadow-xl shadow-gray-300 rounded-lg p-4 max-w-md mx-auto group">
-          <div class="relative rounded-lg -mt-14 overflow-hidden w-full shadow-gray-300 shadow-[0_-10px_15px_-9px,0_4px_15px_3px]">
-            <img :src="book.cover" :alt="book.title + ' cover'" class="rounded-lg w-full h-64 transition-all group-hover:scale-110">
+        <div class="bg-gradient-to-b from-slate-200 via-slate-100 to-white shadow-xl shadow-gray-300 rounded-lg p-4 max-w-md mx-auto group flex justify-center flex-col">
+          <div class="relative transition-all rounded-lg -mt-14 overflow-hidden w-11/12 h-64 shadow-gray-300 shadow-[0_-10px_15px_-9px,0_4px_15px_3px] group-hover:scale-105 self-center">
+            <img :src="book.cover" :alt="book.title + ' cover'" class="rounded-lg w-full h-64 transition-all duration-500 group-hover:scale-105">
             <div class="absolute h-12 w-full gap-2 flex items-center justify-end flex-row bottom-3 left-3">
               <a href="#" class="rounded-full p-3 bg-green-600  text-white bg-opacity-80 hover:bg-opacity-100 transition-all">
                 <UserGroupIcon class="w-4" />
