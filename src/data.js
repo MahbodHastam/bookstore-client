@@ -9,6 +9,7 @@ import book1 from '../public/img/books/book1.jpg'
 import book2 from '../public/img/books/book2.jpg'
 import book3 from '../public/img/books/book3.jpg'
 import book4 from '../public/img/books/book4.jpg'
+import book5 from '../public/img/books/book5.jpg'
 
 export const popularBooksRaw = [
   {
@@ -22,6 +23,12 @@ export const popularBooksRaw = [
     cover: book2,
     free: true,
     attributes: { pages: 129 },
+  },
+  {
+    title: 'مقدمه‌ای بر فیزیک هسته‌ای و ذرات',
+    cover: book5,
+    free: false,
+    attributes: { pages: 340 },
   },
   {
     title: 'ملودی سکوت',
