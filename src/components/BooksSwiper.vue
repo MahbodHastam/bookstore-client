@@ -23,9 +23,9 @@
       :slides-per-view="1"
       :space-between="30"
       :breakpoints="breakpoints"
-      :autoplay="{ delay: 5000, disableOnInteraction: false }"
       class="!py-20 !px-3"
     >
+      <!-- :autoplay="{ delay: 5000, disableOnInteraction: false }" -->
       <swiper-slide v-for="(book, idx) in books" :key="idx">
         <div
           class="
