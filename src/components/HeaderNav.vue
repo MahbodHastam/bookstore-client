@@ -57,7 +57,21 @@ import Logo from '../components/Logo.vue';
 
 const navigation = reactive([
   { name: 'صفحه اصلی', href: '/', },
-  { name: 'قابلیت‌ها', href: '/features', },
+  { name: 'لیست کتاب‌ها', href: '/books', },
   { name: 'درباره ما', href: '/about', },
 ])
 </script>
+
+<style scoped>
+a.router-link-exact-active {
+  @apply relative;
+}
+a.router-link-exact-active::after {
+  content: '';
+ @apply absolute -bottom-1 -right-2 h-6 w-10/12 rounded-full bg-primary-100 -z-10 transition-all;
+}
+a.router-link-exact-active:hover::after {
+  @apply bg-opacity-75;
+}
+
+</style>
