@@ -1,44 +1,36 @@
-// import pic1 from '../public/img/books/pic1.jpg'
-// import pic2 from '../public/img/books/pic2.jpg'
-// import pic3 from '../public/img/books/pic3.jpg'
-// import pic4 from '../public/img/books/pic4.jpg'
-// import pic5 from '../public/img/books/pic5.jpg'
-// import picHaha from '../public/img/books/haha.jpg'
-
-import book1 from '../public/img/books/book1.jpg'
-import book2 from '../public/img/books/book2.jpg'
-import book3 from '../public/img/books/book3.jpg'
-import book4 from '../public/img/books/book4.jpg'
-import book5 from '../public/img/books/book5.jpg'
-
 export const popularBooksRaw = [
   {
+    id: 1,
     title: 'ملت پرنده سه‌پا',
-    cover: book1,
+    cover: '/img/books/book1.jpg',
     free: true,
     attributes: { pages: 12 },
   },
   {
+    id: 2,
     title: 'مکالمات روزمره انگلیسی',
-    cover: book2,
+    cover: '/img/books/book2.jpg',
     free: true,
     attributes: { pages: 129 },
   },
   {
+    id: 3,
     title: 'مقدمه‌ای بر فیزیک هسته‌ای و ذرات',
-    cover: book5,
+    cover: '/img/books/book5.jpg',
     free: false,
     attributes: { pages: 340 },
   },
   {
+    id: 4,
     title: 'ملودی سکوت',
-    cover: book3,
+    cover: '/img/books/book3.jpg',
     free: false,
     attributes: { pages: 75 },
   },
   {
+    id: 5,
     title: 'هنر برنامه‌نویسی چند پردازنده‌ای - جلد اول',
-    cover: book4,
+    cover: '/img/books/book4.jpg',
     free: false,
     attributes: { pages: 193 },
   },
@@ -46,14 +38,16 @@ export const popularBooksRaw = [
 
 export const newestBooksRaw = [
   {
+    id: 1,
     title: 'ملت پرنده سه‌پا',
-    cover: book1,
+    cover: '/img/books/book1.jpg',
     free: true,
     attributes: { pages: 12 },
   },
   {
+    id: 2,
     title: 'مکالمات روزمره انگلیسی',
-    cover: book2,
+    cover: '/img/books/book2.jpg',
     free: true,
     attributes: { pages: 129 },
   },
@@ -61,14 +55,16 @@ export const newestBooksRaw = [
 
 export const nonFreeBooksRaw = [
   {
+    id: 5,
     title: 'هنر برنامه‌نویسی چند پردازنده‌ای - جلد اول',
-    cover: book4,
+    cover: '/img/books/book4.jpg',
     free: false,
     attributes: { pages: 193 },
   },
   {
+    id: 2,
     title: 'مکالمات روزمره انگلیسی',
-    cover: book2,
+    cover: '/img/books/book2.jpg',
     free: true,
     attributes: { pages: 129 },
   },
