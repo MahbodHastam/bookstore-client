@@ -85,8 +85,7 @@
                 left-3
               "
             >
-              <a
-                href="#"
+              <button
                 class="
                   rounded-full
                   p-3
@@ -98,9 +97,8 @@
                 "
               >
                 <UserGroupIcon class="w-4" />
-              </a>
-              <a
-                href="#"
+              </button>
+              <button
                 class="
                   text-sm
                   space-s-1
@@ -116,7 +114,7 @@
               >
                 <EyeIcon class="w-4 inline-block" />
                 <span> شروع به خواندن </span>
-              </a>
+              </button>
             </div>
           </div>
           <div class="py-3 px-4">
@@ -177,7 +175,7 @@ import {
 } from '@heroicons/vue/solid'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/vue'
 import { Autoplay } from 'swiper'
-import Data, { popularBooksRaw, newestBooksRaw, nonFreeBooksRaw } from '../data'
+import { popularBooksRaw, newestBooksRaw, nonFreeBooksRaw } from '../data'
 
 const headingTitleIconClassNames = `w-12 h-12 inline-block -mt-2`
 
