@@ -186,7 +186,7 @@
 <script setup>
 import { CollectionIcon, CursorClickIcon, ChevronDownIcon as DownIcon, CreditCardIcon, LightningBoltIcon } from '@heroicons/vue/solid'
 import { ref } from 'vue';
-import BooksSwiper from '../components/BooksSwiper.vue'
+import BooksSwiper from '../components/IndexBooksSwiper.vue'
 import Logo from '../components/Logo.vue'
 
 const secondSection = ref(null)
