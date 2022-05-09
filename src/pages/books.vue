@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-96 container mx-auto">
+  <div class="pb-8 container mx-auto">
     <books-swiper :data="popularBooks">
       <h4 class="text-slate-700 text-2xl">
         <fire-icon class="w-6 h-6 inline-block me-2" />
