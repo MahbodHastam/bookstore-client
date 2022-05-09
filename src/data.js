@@ -36,12 +36,12 @@ export const allBooksRaw = [
   },
 ]
 
-export const newestBooksRaw = [allBooksRaw[0], allBooksRaw[3]]
+export const newestBooksRaw = [allBooksRaw[0], allBooksRaw[1], allBooksRaw[2], allBooksRaw[3], allBooksRaw[4]]
 
-export const nonFreeBooksRaw = [allBooksRaw[4], allBooksRaw[1]]
+export const premiumBooksRaw = [allBooksRaw[2], allBooksRaw[3], allBooksRaw[4]]
 
 export default {
   popularBooksRaw: allBooksRaw,
   newestBooksRaw,
-  nonFreeBooksRaw,
+  premiumBooksRaw,
 }
