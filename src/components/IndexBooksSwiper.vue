@@ -43,7 +43,7 @@ import {
 } from '@heroicons/vue/solid'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/vue'
 import { Autoplay } from 'swiper'
-import { allBooksRaw, newestBooksRaw, nonFreeBooksRaw } from '../data'
+import { allBooksRaw, newestBooksRaw, premiumBooksRaw } from '../data'
 import BooksSwiperItem from './BooksSwiperItem.vue'
 
 const headingTitleIconClassNames = `w-12 h-12 inline-block -mt-2`
@@ -55,7 +55,7 @@ const props = defineProps({
   },
   type: {
     validator(value) {
-      return ['popular', 'newest', 'non-free'].includes(value)
+      return ['popular', 'newest', 'premium'].includes(value)
     },
     default: 'popular',
   },
@@ -64,7 +64,7 @@ const props = defineProps({
 const getBooks = (type) => {
   if (type === 'popular') return allBooksRaw
   if (type === 'newest') return newestBooksRaw
-  if (type === 'non-free') return nonFreeBooksRaw
+  if (type === 'premium') return premiumBooksRaw
 }
 
 const books = getBooks(props.type)
