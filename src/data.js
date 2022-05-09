@@ -1,4 +1,4 @@
-export const popularBooksRaw = [
+export const allBooksRaw = [
   {
     id: 1,
     title: 'ملت پرنده سه‌پا',
@@ -36,42 +36,12 @@ export const popularBooksRaw = [
   },
 ]
 
-export const newestBooksRaw = [
-  {
-    id: 1,
-    title: 'ملت پرنده سه‌پا',
-    cover: '/img/books/book1.jpg',
-    free: true,
-    attributes: { pages: 12 },
-  },
-  {
-    id: 2,
-    title: 'مکالمات روزمره انگلیسی',
-    cover: '/img/books/book2.jpg',
-    free: true,
-    attributes: { pages: 129 },
-  },
-]
+export const newestBooksRaw = [allBooksRaw[0], allBooksRaw[3]]
 
-export const nonFreeBooksRaw = [
-  {
-    id: 5,
-    title: 'هنر برنامه‌نویسی چند پردازنده‌ای - جلد اول',
-    cover: '/img/books/book4.jpg',
-    free: false,
-    attributes: { pages: 193 },
-  },
-  {
-    id: 2,
-    title: 'مکالمات روزمره انگلیسی',
-    cover: '/img/books/book2.jpg',
-    free: true,
-    attributes: { pages: 129 },
-  },
-]
+export const nonFreeBooksRaw = [allBooksRaw[4], allBooksRaw[1]]
 
 export default {
-  popularBooksRaw,
+  popularBooksRaw: allBooksRaw,
   newestBooksRaw,
   nonFreeBooksRaw,
 }
