@@ -66,3 +66,19 @@ html {
 i.bx {
   vertical-align: middle;
 }
+
+.shape-behind {
+  position: relative;
+}
+
+.shape-behind-sm::after {
+  content: '';
+  position: absolute;
+  @apply right-0 bottom-0 rounded-full bg-primary-200 w-5 h-5 -z-10 bg-opacity-80;
+}
+
+.shape-behind-lg::after {
+  content: '';
+  position: absolute;
+  @apply -right-1 bottom-1 rounded-full bg-primary-200 w-10 h-10 -z-10 bg-opacity-80;
+}

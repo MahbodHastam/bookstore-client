@@ -6,7 +6,9 @@
     <div class="grid grid-cols-1 md:grid-cols-4 my-16 gap-12">
 
       <div class="flex flex-col items-center">
-        <users-icon class="w-14 block text-slate-800 pb-2" />
+        <span class="shape-behind shape-behind-lg w-14 block text-slate-800 pb-2">
+          <users-icon />
+        </span>
         <span class="block text-2xl text-slate-900 font-bold animate-pulse">
           {{ '۱۲۳۰' }}
         </span>
@@ -15,7 +17,9 @@
         </span>
       </div>
       <div class="flex flex-col items-center">
-        <star-icon class="w-14 block text-slate-800 pb-2" />
+        <span class="shape-behind shape-behind-lg w-14 block text-slate-800 pb-2">
+          <star-icon />
+        </span>
         <span class="block text-2xl text-slate-900 font-bold animate-pulse">
           {{ '۱۷۳' }}
         </span>
@@ -24,7 +28,9 @@
         </span>
       </div>
       <div class="flex flex-col items-center">
-        <book-open-icon class="w-14 block text-slate-800 pb-2" />
+        <span class="shape-behind shape-behind-lg w-14 block text-slate-800 pb-2">
+          <book-open-icon />
+        </span>
         <span class="block text-2xl text-slate-900 font-bold animate-pulse">
           {{ '۶' }}
         </span>
@@ -33,7 +39,9 @@
         </span>
       </div>
       <div class="flex flex-col items-center">
-        <sparkles-icon class="w-14 block text-slate-800 pb-2" />
+        <span class="shape-behind shape-behind-lg w-14 block text-slate-800 pb-2">
+          <sparkles-icon />
+        </span>
         <span class="block text-2xl text-slate-900 font-bold animate-pulse">
           {{ '۳' }}
         </span>
